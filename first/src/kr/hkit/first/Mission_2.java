@@ -10,12 +10,12 @@ public class Mission_2 {
 		//0을 입력되면 종료!!!
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.print("1~5값 입력 (종료:0): ");
+		System.out.print("1~6값 입력 (종료:0): ");
 		int val = scan.nextInt();
 		while(val != 0) {
 			System.out.println("val : " + val);
 			
-			System.out.print("1~5값 입력 (종료:0): ");
+			System.out.print("1~6값 입력 (종료:0): ");
 			val = scan.nextInt();
 		}
 		System.out.println("종료!!");
