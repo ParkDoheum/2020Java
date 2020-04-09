@@ -40,5 +40,10 @@ public class Condition2 {
 		if(num <= 10 && num >= 8) {
 			
 		}
+		
+		//삼항식
+		int n1 = 20, n2 = 22;
+		System.out.println("n1과 n2중에 누가 더 크니? " + (n1 > n2 ? "n1" : "n2"));
+		
 	}
 }
