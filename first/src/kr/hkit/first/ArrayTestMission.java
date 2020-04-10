@@ -6,7 +6,16 @@ public class ArrayTestMission {
 		//15개의 정수값을 저장할 수 있는 배열을 생성
 		//1~15값을 각 방에 반복문을 통해서 입력을 시켜주시구요.
 		//다른 반복문을 통해 각 방에 있는 값을 출력을 해주세요.
-
+		
+		int[] arr = new int[20];
+		
+		for(int i=0; i<arr.length; i++) {
+			arr[i] = i + 1;
+		}
+		
+		for(int i=0; i<arr.length; i++) {
+			System.out.printf("arr[%d] : %d\n", i, arr[i]);
+		}
 	}
 
 }
