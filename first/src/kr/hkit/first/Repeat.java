@@ -8,16 +8,23 @@ public class Repeat {
 		
 		//while: 어떤 조건식일떄 동안 반복하고 싶다
 		//   (A)     (B)   (C)
+		/*
 		for(int i=3; i<103; i++) {
 			System.out.println("하하하" + i); //(D)
 		}
-		
+		*/
 		//A > (B > D > C) > (B > D > C) > (B > D > C)
-		int i=0;
+		int i=10;
 		while(i<10) {
 			i++;
 			System.out.println("하하하" + i); //(D)
 		}
+		
+		int z=10;
+		do {
+			z++;
+			System.out.println("호호호" + z);
+		} while(z<10);
 	
 		
 	}
