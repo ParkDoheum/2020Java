@@ -27,6 +27,7 @@ public class RepeatMission {
 			for(int z=2; z<10; z++) {
 				System.out.printf("%d X %d = %d\t", z, i, (z*i));
 			}
+			//이스케이프 문자
 			System.out.println();
 		}
 	}
