@@ -26,8 +26,6 @@ public class ArrayTest3Mission {
 		System.out.printf("전체 합계: %d\n", sum);
 		System.out.printf("Max: %d\n", max);
 		System.out.printf("Min: %d\n", min);
-		
-		
 	}
 
 }
