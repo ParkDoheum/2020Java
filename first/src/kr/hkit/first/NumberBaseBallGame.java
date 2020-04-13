@@ -26,20 +26,37 @@ public class NumberBaseBallGame {
 				}
 			}
 		}
+		/*
 		for(int val : gameNum) {
 			System.out.print(val + ", ");
 		}
-		
-		
-		int s=0, b=0;
+		System.out.println();
+		*/
+		int s = 0, b = 0;
 		while(s < num) {
+			s = 0;
+			b = 0;
 			for(int i=0; i<userNum.length; i++) {
 				System.out.printf("%d번째 값 입력: ", i+1);
 				userNum[i] = scan.nextInt();
 			}
 			
-			//s 몇개, b 몇개, o 몇개
+			for(int i=0; i<gameNum.length; i++) {
+				
+				for(int z=0; z<userNum.length; z++) {
+					
+					if(gameNum[i] == userNum[z]) {
+						if(i == z) {
+							s++;
+						} else {
+							b++;
+						}
+					}
+				}
+			}
 			
+			System.out.printf("S:%d | B:%d | O:%d\n"
+					, s, b, num - (s + b));
 			
 		}
 		
