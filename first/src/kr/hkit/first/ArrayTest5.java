@@ -13,7 +13,6 @@ public class ArrayTest5 {
 		//3번 학생 (sum, avg)
 		 
 		int mathSum = 0, engSum = 0, korSum = 0;
-		
 		int stu0Sum = 0, stu1Sum = 0, stu3Sum = 0, stu4Sum = 0;
 		
 		int[][] arr = {
