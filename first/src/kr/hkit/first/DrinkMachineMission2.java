@@ -2,14 +2,14 @@ package kr.hkit.first;
 
 import java.util.Scanner;
 
-public class DrinkMachineMission {
-
+public class DrinkMachineMission2 {
 	public static void main(String[] args) {
-		//구매할 제품의 번호를 입력해 주세요 (종료:0) : 
 		Scanner scan = new Scanner(System.in);
 		
-		String[] productArray = {"콜라", "사이다", "환타", "맥콜", "마운틴듀"};
-		int[] priceArray = {700, 800, 900, 500, 600};
+		String[] productArray = {"콜라", "사이다", "환타", "맥콜", "마운틴듀", "2%"};
+		int[] priceArray = {700, 800, 900, 500, 600, 400};
+		
+		int[] purchaseArray = new int[productArray.length]; //6 (0~5)
 		
 		System.out.println("번호 \t 제품명 \t 가격");
 		for(int i=0; i<productArray.length; i++) {
@@ -31,7 +31,18 @@ public class DrinkMachineMission {
 			choice--;
 			System.out.printf("%s의 가격은 %d입니다\n\n"
 					, productArray[choice], priceArray[choice]);
+			
+			purchaseArray[choice]++;
+		}
+		
+		for(int i=0; i<purchaseArray.length; i++) {
+			if(purchaseArray[i] > 0) {
+				String nm = productArray[i];
+				int price = priceArray[i];
+				int qty = purchaseArray[i];
+				System.out.printf("%s \t %d개 %,d원\n"
+						, nm, qty, price * qty);
+			}
 		}
 	}
-
 }
