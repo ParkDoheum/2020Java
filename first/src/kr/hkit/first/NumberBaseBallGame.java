@@ -26,14 +26,15 @@ public class NumberBaseBallGame {
 				}
 			}
 		}
-		/*
+		
 		for(int val : gameNum) {
 			System.out.print(val + ", ");
 		}
 		System.out.println();
-		*/
-		int s = 0, b = 0;
+		
+		int s = 0, b = 0, cnt = 0;
 		while(s < num) {
+			cnt++;
 			s = 0;
 			b = 0;
 			for(int i=0; i<userNum.length; i++) {
@@ -60,11 +61,7 @@ public class NumberBaseBallGame {
 			
 		}
 		
-		System.out.println("게임 종료!!");
-		
-		
-		
-		
+		System.out.println("게임 종료!!" + cnt + "번 시도");
 		scan.close();
 		
 	}
