@@ -6,6 +6,7 @@ public class NumberBaseBallGame {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		
 		System.out.print("숫자 몇개 게임을 하시겠습니까? (2~5)");
 		int num = scan.nextInt();
 		
@@ -13,7 +14,7 @@ public class NumberBaseBallGame {
 		int[] userNum = new int[num];
 		
 		for(int i=0; i<num; i++) {
-			int val = (int)(Math.random() * 9 + 1); //2
+			int val = (int)(Math.random() * 9 + 1); //2,3,2,3,9
 			
 			//중복체크
 			for(int z=0; z<gameNum.length; z++) {
@@ -41,18 +42,19 @@ public class NumberBaseBallGame {
 				System.out.printf("%d번째 값 입력: ", i+1);
 				userNum[i] = scan.nextInt();
 			}
-			
+			//i: [2][3][9]
+			//z: [2][3][9]
 			for(int i=0; i<gameNum.length; i++) {
-				
 				for(int z=0; z<userNum.length; z++) {
-					
 					if(gameNum[i] == userNum[z]) {
 						if(i == z) {
 							s++;
 						} else {
 							b++;
 						}
+						break;
 					}
+					
 				}
 			}
 			
