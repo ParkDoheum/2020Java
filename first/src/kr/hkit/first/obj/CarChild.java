@@ -4,9 +4,9 @@ public class CarChild extends Car {
 	public CarChild() {
 		super("마티즈", 1600);
 	}
-
-	public void me() {
-		setNm("dd");
+	
+	public void speakHorn() {
+		System.out.println("빠아아아아아ㅏㅇ~~~");
 	}
 	
 	//오버라이딩 

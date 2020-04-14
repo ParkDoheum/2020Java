@@ -10,7 +10,6 @@ public class Car {
 	
 	public Car() {
 		this("소나타", 3000);
-		System.out.println("Car 기본 생성자");
 	}
 	
 	public Car(int cc) {
