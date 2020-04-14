@@ -1,8 +1,9 @@
 package kr.hkit.first;
 
+import kr.hkit.first.obj.Car;
+
 public class ArrayTest {
 	int sum = 0;
-	
 	
 	public static void main(String[] args) {
 		
