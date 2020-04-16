@@ -9,7 +9,6 @@ public class CardDeck {
 	}
 	
 	private void init() {
-		//int idx = 0;
 		int idx = 0;
 		for(int i=0; i<patterns.length; i++) {
 			for(int z=1; z<=13; z++) {
@@ -51,6 +50,16 @@ public class CardDeck {
 				cards[rIdx] = null;
 				return c;
 			}
+		}
+	}
+	
+	public void shakeCards() {
+		for(int i=0; i<cards.length; i++) {
+			int rIdx = (int)(Math.random() * cards.length); //0~51
+			
+			Card c = cards[i];
+			cards[i] = cards[rIdx];
+			cards[rIdx] = c;
 		}
 	}
 	

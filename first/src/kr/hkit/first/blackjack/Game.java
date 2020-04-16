@@ -11,7 +11,7 @@ public class Game {
 		Gamer gamer = new Gamer();
 		Dealer dealer = new Dealer();
 		Rule rule = new Rule();
-		
+	
 		for(int i=0; i<INIT_RECEIVE_CARD_COUNT; i++) {
 			gamer.receiveCard(cd.pick());
 			dealer.receiveCard(cd.pick());
@@ -27,7 +27,6 @@ public class Game {
 			if(answer.equals("0")) {
 				break;
 			}
-			
 			gamer.receiveCard(cd.pick());
 		}
 		dealer.showMyCards();
