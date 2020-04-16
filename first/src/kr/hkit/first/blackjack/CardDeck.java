@@ -3,14 +3,15 @@ package kr.hkit.first.blackjack;
 public class CardDeck {
 	private Card[] cards = new Card[52]; //0~51 (0~12 , 13~25, 26~38, 39~51)
 	private String[] patterns = {"스페이드", "하트", "클로버", "다이아몬드"};
+	
 	public CardDeck() {
 		init();
 	}
 	
 	private void init() {
+		//int idx = 0;
 		int idx = 0;
 		for(int i=0; i<patterns.length; i++) {
-			
 			for(int z=1; z<=13; z++) {
 				String denomination = "";
 				int score = z;
@@ -37,6 +38,18 @@ public class CardDeck {
 				}
 				
 				cards[idx++] = new Card(patterns[i], denomination, score);
+			}
+		}
+	}
+	
+	public Card pick() {
+		while(true) {
+			int rIdx = (int)(Math.random() * cards.length); //0~51
+			//rIdx = 50;
+			if(cards[rIdx] != null) { //만약 주소값이 있다면
+				Card c = cards[rIdx];
+				cards[rIdx] = null;
+				return c;
 			}
 		}
 	}
