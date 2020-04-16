@@ -6,4 +6,8 @@ public class CarGrandChild extends CarChild {
 	public void printMySpec() {
 		System.out.printf("CarGrandChild %s and %dcc\n", nm, cc);
 	}
+	
+	public void breaking() {
+		System.out.println("끼이이익!!");
+	}
 }

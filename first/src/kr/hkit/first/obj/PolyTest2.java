@@ -10,9 +10,30 @@ public class PolyTest2 {
 		callPrintMySpec(cgc);
 		callPrintMySpec(cc);
 		callPrintMySpec(c);
+		
+		//callPrintMySpec("sss");
 	}
 	
 	public static void callPrintMySpec(Car obj) {
 		obj.printMySpec();
 	}
+	
+	/*
+	public static void callPrintMySpec(Object obj) {
+		if(obj instanceof Car) {
+			Car car = (Car)obj;
+			car.printMySpec();
+			return;
+		}
+		
+		System.out.println(obj);
+	}*/
 }
+
+
+
+
+
+
+
+

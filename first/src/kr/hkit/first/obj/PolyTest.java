@@ -14,6 +14,7 @@ public class PolyTest {
 		System.out.println("----------");
 		car2.printMySpec();
 		
+		
 		CarChild cc2 = (CarChild)car;
 		
 	}

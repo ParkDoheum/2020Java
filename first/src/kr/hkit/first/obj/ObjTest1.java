@@ -29,5 +29,8 @@ public class ObjTest1 {
 		
 		PrintStream ps = System.out;
 		ps.println("dddd");
+		
+		
+		
 	}
 }
