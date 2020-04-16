@@ -5,17 +5,17 @@ public class ClassTest3 {
 	public static void main(String[] args) {
 		
 		ClassC cc = new ClassC();
-		callMethod(cc);
 		
-		ClassB cb = cc;
-		/*
-		callMethod(new ClassB());
+		ClassTest3 ct3 = new ClassTest3();
+		ct3.callMethod(cc);
 		
-		callMethod(new ClassA());
-		*/
+		ct3.callMethod(new ClassB());
+		
+		ct3.callMethod(new ClassA());
+		
 	}
 	
-	public static void callMethod(ClassA ca) {
+	public void callMethod(ClassA ca) {
 		ca.methodA();
 		
 		if(ca instanceof ClassB) {
