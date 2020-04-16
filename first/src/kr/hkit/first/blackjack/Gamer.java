@@ -39,5 +39,6 @@ public class Gamer {
 			}
 			System.out.println(c);
 		}
+		System.out.printf("합계: %d\n",  getScoreSum());
 	}
 }
