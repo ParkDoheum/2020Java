@@ -28,8 +28,15 @@ public class Customer {
 	private int parseStringToInt(String v) {
 		int result = 0;
 		try {
-			result = Integer.parseInt(v);
+			result = Integer.parseInt(v); //"1212"
 		} catch(Exception e) {}
 		return result;
 	}
 }
+
+
+
+
+
+
+
