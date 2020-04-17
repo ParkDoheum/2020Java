@@ -4,6 +4,7 @@ public class MenuItem {
 	private String menuName;
 	private int price;
 	
+	
 	public MenuItem(String menuName, int price) {
 		super();
 		this.menuName = menuName;

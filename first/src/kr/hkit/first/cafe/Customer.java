@@ -21,6 +21,10 @@ public class Customer {
 		}
 	}
 	
+	public void drinkCoffee(Coffee coff) {
+		System.out.printf("고객이 %s을(를) 마신다\n", coff.getName());
+	}
+	
 	private int parseStringToInt(String v) {
 		int result = 0;
 		try {
