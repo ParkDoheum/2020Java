@@ -6,7 +6,6 @@ public class Gamer {
 	//외부로부터 Card주소값이 넘어오면 myCards 배열에 순서대로 주소값을 저장하는
 	//메소드를 만드시오.
 	private int idx = 0;
-	
 	public void receiveCard(Card c) {
 		if(idx == myCards.length) {
 			return;

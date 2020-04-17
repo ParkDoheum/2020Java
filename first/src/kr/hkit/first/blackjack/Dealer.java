@@ -9,6 +9,5 @@ public class Dealer extends Gamer {
 		if(sum <= CAN_RECEIVE_POINT) {
 			receiveCard(cd.pick());
 		}
-		
 	}
  }

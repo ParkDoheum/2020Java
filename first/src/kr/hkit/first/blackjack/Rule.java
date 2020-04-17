@@ -20,7 +20,5 @@ public class Rule {
 		//누가 이겼는지?
 		System.out.printf("게이머: %d, 딜러: %d\n", gamerSum, dealerSum);
 		
-		
-		
 	}
 }

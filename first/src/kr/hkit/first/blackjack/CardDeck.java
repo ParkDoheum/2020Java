@@ -32,11 +32,12 @@ public class CardDeck {
 					denomination = "K";
 					break;
 				default:
-					denomination = String.valueOf(z);
+					denomination = String.valueOf(z); //2~10
 					break;
 				}
 				
 				cards[idx++] = new Card(patterns[i], denomination, score);
+				
 			}
 		}
 	}
