@@ -27,6 +27,22 @@ public class MyArrayList {
 		obj = temp;
 	}
 	
+	public void remove(int idx) {
+		Object[] temp = new Object[obj.length - 1];
+		for(int i=0; i<temp.length; i++) {
+			if(i < idx) {
+				temp[i] = obj[i];
+			} else {
+				temp[i] = obj[i+1];
+			}
+		}
+		obj = temp;
+	}
+	
+	public Object get(int idx) {
+		return obj[idx];
+	}
+	
 	public void showMyValues() {
 		for(Object obj : obj) {
 			System.out.println(obj);

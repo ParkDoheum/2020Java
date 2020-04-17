@@ -13,9 +13,16 @@ public class MyArrayListTest {
 		
 		malist.add(1, 50);
 		
+		malist.remove(2);
+		
 		//10, 50, 20, 30
 		
+		//10, 50, 30
+		
 		malist.showMyValues();
+		
+		Object obj = malist.get(1);
+		System.out.println(obj);
 	}
 
 }
